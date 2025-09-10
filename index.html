@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script type="application/javascript">
-            function checkdata()
-                {
-                    var username = document.getElementById("name");
-                    var emailid = document.getElementById("email");
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Details</title>
+  <script type="application/javascript">
+    function checkdata() {
+      const username = document.getElementById("name");
+      const emailid = document.getElementById("email");
 
-                    if(username.value==""){
-                        alert("Please enter valid name");
-                        username.focus();
-                        return false;
-                    }
+      if (username.value.trim() === "") {
+        alert("Please enter a valid name");
+        username.focus();
+        return false;
+      }
 
-                    if(emailid.value==""){
-                        alert("Please enter valid email address");
-                        emailid.focus();
-                        return false;
-                    }
+      if (emailid.value.trim() === "") {
+        alert("Please enter a valid email address");
+        emailid.focus();
+        return false;
+      }
 
-                    return true;
-                }
-        </script>
-        <title>Contact Details</title>
-    </head>
-    <body>
-        <h2>Enter your contact details:</h2> <br>
-        <form id="form1" onsubmit="return checkdata()">
-        <form id="form1">
-            <label for="name">Name:</label>
-            <input type="text" id="name" username="name">
-            <br><br>
-            <label for="email">Email Address:</label>
-            <input type="text" id="email" email address="email">
-            <br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-    </body>
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter your contact details:</h2>
+  <form id="form1" onsubmit="return checkdata()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="email">Email Address:</label>
+    <input type="text" id="email" name="email">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+</body>
 </html>
-
