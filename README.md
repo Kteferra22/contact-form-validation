@@ -6,7 +6,7 @@ Built with **HTML, CSS, and JavaScript**.
 ---
 
 ## 🚀 Live Demo  
-👉 [Try it here](https://Kteferra22.github.io/contact-form-validator/)  
+👉 [Try it here](https://Kteferra22.github.io/contact-form-validation/)  
 
 ---
 
